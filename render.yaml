@@ -1,0 +1,11 @@
+# Exported from Render on 2024-04-27T04:16:43Z
+services:
+- type: web
+  name: test_chat
+  runtime: node
+  repo: https://github.com/vanson0503/test_chat
+  plan: free
+  region: oregon
+  buildCommand: yarn --frozen-lockfile install
+  startCommand: node index.js
+version: "1"
